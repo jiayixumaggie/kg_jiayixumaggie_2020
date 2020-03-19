@@ -18,3 +18,9 @@ const char_map = function(s1, s2) {
   }
   return true;
 };
+
+if (process.argv.length === 4) {
+  const s1 = process.argv[2];
+  const s2 = process.argv[3];
+  console.log(char_map(s1, s2));
+}
